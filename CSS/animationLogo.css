@@ -1,3 +1,28 @@
-div{
-    image-resolution: 1%;
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+@keyframes animatedCircle{
+    0%   {background-color: red;
+          transform: rotate(-90deg);}
+    25%  {background-color: black;
+          border-radius: 100%;}
+    50%  {background-color: green;}
+    75%  {background-color: purple;
+          border-radius: 70%;}
+    100% {background-color: orange;
+          transform: rotate(90deg);}
+}
+div {
+    width: 500px;
+    height: 500px;
+    margin-left: 30rem;
+    margin-top: 5rem;
+    background-color: red;
+    animation-name: animatedCircle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+
 }
